@@ -1,0 +1,152 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: serif;
+}
+
+html,body{
+      width: 100%;
+      height: 100%;
+}
+
+ #main{
+      width: 100%;
+      height: 100vh;
+      /* background-color: black; */
+ }
+ #back{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      /* background-color:red; */
+ }
+ #top{
+     pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      /* background-color:#460c0c; */
+ }
+
+ #workingarea{
+      position: relative;
+      width: 80%;
+      height: 100vh;
+      max-width: 1920px;
+      /* background-color: #888; */
+      margin: 0 auto;
+      /* border: 3px solid red; */
+
+ }
+
+ #nav{
+     /* pointer-events: all; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      /* margin-bottom: 20px; */
+
+ }
+ #nav img{
+      height: 60px;
+ }
+
+ #nleft ,#nright{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+ }
+ #nav a{
+     pointer-events: all;
+      color: #fff;
+      font-family: "gilory";
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+ }
+
+ #hero{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0,-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      /* height: 100px; */
+      /* background-color: red; */
+ }
+
+ #heroleft .elem{
+      height: 6vw;
+      /* background-color: palevioletred; */
+      overflow: hidden;
+ }
+
+ #heroleft .elem h1{
+      line-height:1 ;
+      font-family: serif;
+      color: #fff;
+      font-size: 6vw;
+      text-transform: uppercase;
+ }
+
+ #heroleft button{
+     pointer-events: all;
+      padding: .8vw 3vw;
+      font-size: 3vw;
+      font-family: serif;
+      margin-top:2vw ;
+
+ }
+ #heroleft{
+     min-width: 50%;
+      /* height: 100px; */
+      /* background-color: yellow; */
+ }
+ #heroright{
+     width: 17%;
+      /* height: 100px; */
+      /* background-color: green; */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+ }
+
+ #heroright p{
+     font-size: 14px;
+     font-weight: 400;
+     text-align: right;
+     /* margin-bottom: 52px; */
+     margin-top: -10px;
+ }
+
+  #heroright #imagediv{
+     width: 100%;
+     height: 200px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     /* background-color: purple; */
+     background-image: url("butter2.jpg");
+     background-position: center;
+     background-size: cover;
+  }
+  #heroright p:nth-child(3){
+     color: red;
+     margin-bottom: 60px;
+
+  }
+  #back img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+  }
